@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoevaluación</title>
+</head>
+<body>
+    <h1>Autoevaluación</h1>
+    <form id="autoevaluacion-form">
+        <div>
+            <label for="fortalezas-debilidades">¿Cuáles son tus fortalezas y debilidades a nivel personal?</label><br>
+            <textarea id="fortalezas-debilidades" name="fortalezas-debilidades" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="intereses">¿Qué temas te interesan más?</label><br>
+            <input type="text" id="intereses" name="intereses">
+        </div>
+        <div>
+            <label for="estilo-trabajo">¿Eres ordenado y metódico o flexible y creativo?</label><br>
+            <input type="text" id="estilo-trabajo" name="estilo-trabajo">
+        </div>
+        <div>
+            <label for="materias-favoritas">¿Cuáles son tus materias favoritas?</label><br>
+            <textarea id="materias-favoritas" name="materias-favoritas" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="materias-no-gustan">¿Qué materias no te gustan?</label><br>
+            <textarea id="materias-no-gustan" name="materias-no-gustan" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="visualizacion-futuro">¿Cómo te visualizas en el futuro?</label><br>
+            <textarea id="visualizacion-futuro" name="visualizacion-futuro" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="orientacion">¿Estás dispuesto a pedir orientación?</label><br>
+            <input type="radio" id="si" name="orientacion" value="si">
+            <label for="si">Sí</label>
+            <input type="radio" id="no" name="orientacion" value="no">
+            <label for="no">No</label>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+        <div  id="respuesta-openai">
+            <!-- Aquí aparecerá la respuesta de OpenAI -->
+        </div>
+        
+    </form>
+</body>
+</html>
+
