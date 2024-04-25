@@ -36,8 +36,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
           this.menus.push(...[
             {icon: 'manage_accounts', name: 'Usuarios', route: 'admin/usuarios'},
             {icon: 'category', name: 'Asesor', route: 'admin/asesor'},
-            {icon: 'inventory_2', name: 'Productos', route: 'admin/productos'},  
-            {icon: 'request_quote', name: 'Facturas', route: 'admin/facturas'}  
+        
           ]);
         }
 
@@ -47,7 +46,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
         if (rol.clave == 'ventas'){
           this.menus.push(...[
             
-            {icon: 'category', name: 'Asesor', route: 'admin/asesor'}
+            
           ]);
         }
       }
